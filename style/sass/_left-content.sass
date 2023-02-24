@@ -1,0 +1,21 @@
+.content-left
+    background-image: linear-gradient(#3718B2, #CD33A4)
+    min-height: 2rem
+    .left-logo
+        color: white
+        font-weight: 800
+        font-size: 2.5rem
+
+//Larger than mobile screens
+@media (min-width: 576px)
+    .content-left
+        padding: 0
+        .left-logo
+            margin: 2rem 3rem
+
+//Mobile screens
+@media (max-width: 576px)
+    .content-left
+        background-image: linear-gradient(to right,#3718B2, #CD33A4)
+        .left-logo
+            font-size: 3vh

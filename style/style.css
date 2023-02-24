@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+body .content {
+  height: 100vh;
+}
+body .content-container {
+  display: none;
+}
+
+.content-left {
+  background-image: linear-gradient(#3718B2, #CD33A4);
+  min-height: 2rem;
+}
+.content-left .left-logo {
+  color: white;
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+@media (min-width: 576px) {
+  .content-left {
+    padding: 0;
+  }
+  .content-left .left-logo {
+    margin: 2rem 3rem;
+  }
+}
+@media (max-width: 576px) {
+  .content-left {
+    background-image: linear-gradient(to right, #3718B2, #CD33A4);
+  }
+  .content-left .left-logo {
+    font-size: 3vh;
+  }
+}
+.content-right .row {
+  height: 100%;
+  width: 96%;
+}
+.content-right .loan-app-container .loan-app-header-container {
+  display: flex;
+}
+.content-right .loan-app-container .loan-app-header-container .loan-app-header {
+  font-size: 3rem;
+  margin: 0;
+  color: #212121;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.content-right .loan-app-container .loan-app-header-container .loan-app-header .loan-app-thumbs-up {
+  width: 2rem;
+  height: 2rem;
+}
+.content-right .loan-app-container .loan-app-interact-container .loan-app-label {
+  color: #6E6E6E;
+  font-size: 1.64rem;
+}
+.content-right .loan-app-container .loan-app-interact-container .loan-app-amount {
+  display: flex;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: black;
+  border: 1px #CBCBCB solid;
+  padding: 0.5rem 1rem;
+}
+.content-right .loan-app-container .loan-app-interact-container .loan-app-amount .form-control {
+  font-size: 1.75rem;
+  color: black;
+  font-weight: 700;
+  border: none;
+  margin: 0;
+  padding: none;
+}
+.content-right .loan-app-container .loan-app-interact-container .buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.content-right .loan-app-container .loan-app-interact-container .buttons .btn-light {
+  font-size: 1.563rem;
+  background-color: #F2F2F2;
+  padding: 1.25rem 0;
+  border: 1px #CBCBCB solid;
+  transition: 0.2s;
+}
+.content-right .loan-app-container .loan-app-interact-container .buttons .btn-light:not(:disabled):not(.disabled).active {
+  background-color: #474747;
+  color: white;
+}
+.content-right .loan-app-container .loan-app-interact-container .buttons .btn-light:hover {
+  color: white;
+  background-color: #474747;
+  transition: 0.2s;
+}
+.content-right .loan-app-container .loan-app-interact-container .buttons .btn-light .loan-term-radio {
+  visibility: hidden;
+  width: 0rem;
+}
+.content-right .loan-app-container .loan-app-interact-container .submit-btn {
+  cursor: pointer;
+  background-color: #7600FF;
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 1.625rem;
+  transition: 0.2s;
+}
+.content-right .loan-app-container .loan-app-interact-container .submit-btn:hover {
+  background-color: #b271fc;
+  transition: 0.2s;
+}
+
+@media (min-width: 576px) {
+  .btn-light.col-sm-4 {
+    flex: 0 0 32.5%;
+  }
+}
+@media (max-width: 576px) {
+  .content-right {
+    padding: 0;
+  }
+  .content-right .row {
+    width: 100%;
+  }
+  .content-right .loan-app-container .loan-app-header-container .loan-app-header {
+    font-size: 2.5rem;
+  }
+  .content-right .loan-app-container .loan-app-interact-container .loan-app-label {
+    font-size: 1.25rem;
+  }
+  .content-right .loan-app-container .loan-app-interact-container .loan-app-amount {
+    font-size: 1.75rem;
+  }
+  .content-right .loan-app-container .loan-app-interact-container .loan-app-amount .form-control {
+    font-size: 1.4rem;
+  }
+  .content-right .loan-app-container .loan-app-interact-container .buttons {
+    margin-bottom: 1.5rem;
+  }
+  .content-right .loan-app-container .loan-app-interact-container .buttons .btn-light {
+    font-size: 1.563rem;
+    background-color: #F2F2F2;
+    padding: 0.75rem 0;
+    border: 1px #CBCBCB solid;
+    margin: 0.5rem 0;
+  }
+  .content-right .loan-app-container .loan-app-interact-container .submit-btn {
+    padding: 0.75rem;
+    font-size: 1.25rem;
+  }
+}/*# sourceMappingURL=style.css.map */
